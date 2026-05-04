@@ -3,8 +3,8 @@ let loanForm = document.querySelector("#loanForm");
 loanForm.addEventListener("submit", function (e) {
   e.preventDefault();
 
-  let creditScore = Number(document.getElementById("creditScore").value);
-  let loanAmount = Number(document.getElementById("loanAmount").value);
+  let creditScore = parseFloat(document.getElementById("creditScore").value);
+  let loanAmount = parseFloat(document.getElementById("loanAmount").value);
   let messages = document.getElementById("messages");
 
   messages.classList.remove("text-red-500", "text-green-500");
