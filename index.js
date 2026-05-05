@@ -15,7 +15,7 @@ loanForm.addEventListener("submit", function (e) {
   ) {
     messages.innerHTML = "Please Enter your credit Score and your Loan amount.";
     messages.classList.add("text-red-500");
-  } else if (creditScore === 0 && creditScore <= 3) {
+  } else if (creditScore >= 0 && creditScore <= 3) {
     messages.innerHTML = "Sorry! you are not eligible to borrow money";
     messages.classList.add("text-red-500");
   } else if (creditScore >= 4 && creditScore <= 7) {
@@ -60,3 +60,5 @@ loanForm.addEventListener("submit", function (e) {
     messages.classList.add("text-red-500");
   }
 });
+
+
