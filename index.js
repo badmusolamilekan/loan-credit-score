@@ -10,8 +10,8 @@ loanForm.addEventListener("submit", function (e) {
   messages.classList.remove("text-red-500", "text-green-500");
 
   if (
-    document.getElementById("creditScore").value === "" ||
-    document.getElementById("loanAmount").value === ""
+    creditScore === "" ||
+    loanAmount === ""
   ) {
     messages.innerHTML = "Please Enter your credit Score and your Loan amount.";
     messages.classList.add("text-red-500");
